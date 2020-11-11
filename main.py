@@ -23,4 +23,4 @@ init_local_git = f"git init {PROJECT_DIR}"
 remote_push = f"git -C {PROJECT_DIR} remote add origin git@github.com:kendhia/{NEW_REPO_NAME}.git"
 #os.system(init_local_git)
 #os.system(remote_push)
-os.system(f"git -C {PROJECT_DIR} add . & git -C {PROJECT_DIR} commit -a -m 'message' & git -C {PROJECT_DIR} push")
+os.system(f"git -C {PROJECT_DIR} add . & git -C {PROJECT_DIR} commit -a -m 'message' & git -C {PROJECT_DIR} push --set-upstream origin master")
